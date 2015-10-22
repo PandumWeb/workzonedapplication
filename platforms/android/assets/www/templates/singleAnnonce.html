@@ -1,0 +1,45 @@
+<ion-view view-title="Annonce" class="bkg-pages">
+  <ion-content>
+    <div class="card">
+      <h1 id="h1_annonce">{{ news.offer.title }}</h1>
+        <h2 id="h2_annonce">{{userLastName}} {{userFirstName}} at {{news.offer.created_at | date:'MM/dd/yyyy'}}</h2>
+          <p id="p_annonce">{{ news.offer.content}}
+          </p>
+          <div class="bloc-infos-single">
+            <hr>
+            <div class="row">
+              <div class="col col-third">Catégorie</div>
+              <div class="col col-third"> {{ news.offer.categories_name }}</div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col col-third">Région</div>
+              <div class="col col-third">{{ news.offer.localisation }}</div>
+            </div>
+            <hr>
+            <div class="row tel">
+              <div class="col col-third">Téléphone</div>
+              <div class="col col-third">0{{ userNumberPhone }}</div>
+            </div>
+         </div><!-- fin div bloc-infos-single -->
+          <div class="item tabs tabs-secondary tabs-icon-left">
+            <a class="tab-item edit" href="#/app/edit/{{news.offer.id}}">
+              <i class="icon ion-edit"></i>
+                Modifier
+            </a>
+            <a class="tab-item delete" ng-click="DeletePost()">
+              <i class="icon ion-trash-b"></i>
+                Supprimer
+            </a>
+            <a class="tab-item email" href="mailto:{{ userEmail }}">
+              <i class="icon ion-email"></i>
+                Email
+            </a>
+            <a class="tab-item tel" href="tel:0{{ userNumberPhone }}">
+              <i class="icon ion-iphone"></i>
+                Téléphone
+            </a>
+          </div><!-- fin div tabs -->
+    </div> <!-- fin div card -->   
+  </ion-content>
+</ion-view>

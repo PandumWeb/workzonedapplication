@@ -1,0 +1,31 @@
+<ion-view view-title="#WKZD" class="bkg-pages" >
+  <ion-content>
+ <!-- Click me: <input type="checkbox" ng-model="checked"><br/>
+  <div ng-show="checked">
+    <label class="item item-input search">
+    	<i class="icon ion-search placeholder-icon"></i>
+    	<input type="text" placeholder="Search">
+    </label>
+  </div> --> 
+    <ion-list>
+	    <div  ng-repeat="new in news.offers.data">
+	    	<div class="card">
+			  <a href="#/app/single-annonce/{{new.id}}" class="item">
+			  		<div class="bloc-texte">
+				  		<h2 class="h2_accueil">{{ new.title }}</h2>
+				  		<p class="p_accueil">{{ new.content }}</p>
+				  		<div class="loca-accueil">
+					  		<i class="icon icon-deposer ion-location placeholder-icon icon-accueil"></i>
+					  		<p class="p_loca"> {{ new.localisation}} </p>
+				  		</div>
+				  		<div class="cat-accueil">
+					  		<p class="p_cat"> {{ new.categories_name}} </p>
+					  		<p ng-repeat="tab in tablog">{{tab.name}}</p>
+				  		</div>
+			  		</div><!-- fin div bloc-texte -->
+			  </a>
+			</div><!-- fin div card -->  	
+		</div> <!-- fin div ng-repeat --> 	  
+	</ion-list>
+  </ion-content>
+</ion-view>

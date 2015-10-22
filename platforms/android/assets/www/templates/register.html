@@ -1,0 +1,39 @@
+<ion-view view-title="Register" class="bkg-login">
+	<ion-content>
+	<div class="login-page">
+		<h1 id="h1_login">Workzoned</h1>
+	   		<form ng-submit="registerForm()">
+		    	<div class="list bloc-form-register">
+			    	<label class="item item-input ff">
+			    	  <input type="text" class="input-log-reg" ng-model="formData.name" placeholder="Nom" autofocus name="name">
+			    	</label>
+			    	<div class="message-login" ng-show="message_name">{{ message_name }}</div>
+			    	<label class="item item-input ff">
+			    	  <input type="text" class="input-log-reg" ng-model="formData.firstname" placeholder="Prénom" autofocus name="firstname">
+			    	</label>
+			    	<div class="message-login" ng-show="message_name">{{ message_firstname }}</div>
+			    	<label class="item item-input ff">
+			    	  <input type="text" class="input-log-reg" ng-model="formData.username" placeholder="Pseudonyme" name="username">
+			    	</label>
+			    	<div class="message-login" ng-show="message_username">{{ message_username }}</div>
+			    	<label class="item item-input ff">
+			    	  <input type="password" class="input-log-reg" ng-model="formData.password" placeholder="Mot de passe" name="password">
+			    	</label>
+			    	<div class="message-login" ng-show="message_password">{{ message_password }}</div>
+			    	<label class="item item-input ff">
+			    	  <input type="text" class="input-log-reg" ng-model="formData.email" placeholder="Email" name="email">
+			    	</label>
+			    	<div class="message-login" ng-show="message_email">{{ message_email }}</div>
+			    	<label class="item item-input ff">
+			    	  <input type="text" class="input-log-reg" ng-model="formData.number_phone" placeholder="Numéro de téléphone" name="number_phone">
+			    	</label>
+			    	<div class="message-login" ng-show="message_email">{{ message_number_phone }}</div>
+			    	<button class="button  button-small"  id="btn-login">S'inscrire</button>
+			    	<a href="#/app/login" id="btn-register">Déjà inscrit ? <span id="span_login">Cliquer ici</span></a>
+		  		</div>
+		  			<img src="img/logo-appli.png" alt="logo appli" id="logo-appli-login">
+		</div><!-- fin div card -->  		
+	</ion-content>
+</ion-view>
+
+

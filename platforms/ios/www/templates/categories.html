@@ -1,0 +1,13 @@
+<ion-view view-title="Catégories" class="bkg-pages">
+  <ion-content>
+  	<ion-list>
+		<div class="categories" ng-repeat="category in categories.categories">
+	   		<div class="card">
+	    		<div class="item">
+	     			<a href="#/app/category/{{category.id}}"><h2 class="h2_categories">{{ category.categories_name }}</h2></a>
+	     		</div>
+	    	</div><!-- fin div card -->	
+	   </div><!-- fin div categories -->	
+    </ion-list>
+  </ion-content>
+</ion-view>

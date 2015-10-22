@@ -1,0 +1,23 @@
+<ion-view view-title="Category" class="bkg-pages" >
+	<ion-content>
+		<div  ng-repeat="cat in categoryById">
+	    	<div class="card">
+			  <a href="#/app/single-annonce/{{cat.id}}" class="item">
+			  		<div class="bloc-texte">
+				  		<h2 class="h2_accueil">{{ cat.title }}</h2>
+				  		<p class="p_accueil">{{ cat.content }}</p>
+				  		<div class="loca-accueil">
+					  		<i class="icon icon-deposer ion-location placeholder-icon icon-accueil"></i>
+					  		<p class="p_loca"> {{ cat.localisation}} </p>
+				  		</div>
+				  		<div class="cat-accueil">
+					  		<p class="p_cat"> {{ cat.categories_name}} </p>
+				  		</div>
+			  		</div><!-- fin div bloc-texte -->
+			  </a>
+			</div><!-- fin div card -->  	
+		</div> <!-- fin div ng-repeat --> 	  
+	</ion-content>
+</ion-view>
+
+

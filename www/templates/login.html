@@ -1,0 +1,24 @@
+<ion-view view-title="Login" class="bkg-login">
+	<ion-content>
+		<div class="login-page">
+			<h1 id="h1_login">Workzoned</h1>
+				<div class="list bloc-form-login">
+				   	<label class="item item-input ff">
+				   		<input type="text" class="input-log-reg" ng-model="formData.username" placeholder="Pseudonyme" name="username" required autofocus>
+				    </label>
+				    <div class="message-login" ng-show="message_username">{{ message_username }}</div>
+				    <label class="item item-input ff">
+				    	<input type="password" class="input-log-reg" ng-model="formData.password" placeholder="Mot de passe" required name="password">
+				    </label>	
+				    <div class="message-login" ng-show="message_password">{{ message_password }}</div>
+				    	<div class="message-login" ng-show="message_login">{{ message_login }}</div>
+				    <button ng-click="loginForm()" class="button button-small" id="btn-login">Login</button>
+				    <a href="#/app/register" id="btn-register">Pas encore inscrit ? <span id="span_login">Cliquer ici</span></a>
+			  	</div><!-- fin div bloc-form-login -->
+			  		<img src="img/logo-appli.png" alt="logo appli" id="logo-appli-login">
+		</div><!-- fin div login-page -->		
+	</ion-content>
+</ion-view>
+
+
+

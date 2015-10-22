@@ -1,0 +1,65 @@
+<ion-view view-title="Éditer" class="bkg-pages">
+  <ion-content>
+  	<div class="card">
+   		<form ng-submit="processForm()">
+		  <div class="form-deposer">
+		  	<div id="message" ng-show="message">{{ message }}</div>
+			  	<h2 class="input-label h2-deposer">Titre</h2>
+				<hr class="hr-deposer">
+				<div id="name-title">
+			  		<label class="item-input label-deposer">
+	    				<input type="text" placeholder="Titre Annonce" name="title" ng-model="formData.title">
+	    	  		</label>
+	    	  		<div id="name-title" ng-class="{ 'has-error' : errorTitle }">
+	    	 			<span class="help-block" ng-show="errorTitle">{{ errorTitle }}</span>
+	   				</div>
+	   			</div><!-- fin div name-title -->
+			  	<h2 class="input-label h2-deposer">Localisation</h2>
+				<hr class="hr-deposer">
+				<div id="name-localisation">
+				 	<label class="item-input label-deposer">
+				  		<i class="icon icon-deposer ion-location placeholder-icon"></i>
+				   	 	<input class="input-deposer" name="localisation" type="text" placeholder="Localisation" ng-model="formData.localisation">
+				 	 </label>
+				  	 <div id="name-group" ng-class="{ 'has-error' : errorLocalisation }">
+			 		 	<span class="help-block" ng-show="errorLocalisation">{{ errorLocalisation }}</span>
+					 </div>
+				</div><!-- fin div name-localisation -->
+	   			<hr class="hr-deposer">
+	   			<div id="name-categories">
+	          		<label class=" item-input item-select label-select">
+			    		<div class="input-label">
+			      			<h2 class="input-label ">Catégories</h2>
+			    		</div>
+		    			<select name="categories" ng-model="formData.categories_name">
+			    			<option selected></option>
+			      			<option  ng-repeat="category in categories.categories">{{category.categories_name}}</option>
+	    				</select>
+	 		  		</label>
+	 		  		<div id="name-categories" ng-class="{ 'has-error' : errorCategories }">
+	 		  			<span class="help-block" ng-show="errorCategories">{{ errorCategories }}</span>
+	   				</div>
+	   			</div><!-- fin div name-categories -->
+	   			<h2 class="input-label h2-deposer">Contenu</h2>
+				<hr class="hr-deposer">
+	   			<div id="name-content">
+			  		<label class="item item-input">
+			  			<textarea class="textarea-deposer" type="text" placeholder="Contenu annonce" name="content" ng-model="formData.content"></textarea>
+			  		</label>
+			 		 <div id="name-content" ng-class="{ 'has-error' : errorContent }">
+			  			<span class="help-block" ng-show="errorLocalisation">{{ errorContent}}</span>
+	   				</div>
+	   			</div><!-- fin div name-content -->
+	   			<div id="name-user_id">
+			  		<label class="item item-input" value="{{user_id}}">
+			  			<textarea class="textarea-deposer" type="text" placeholder="Contenu annonce" name="users_id" ng-model="formData.users_id"></textarea>
+			  		</label>
+	   			</div><!-- fin div name-user_id -->
+			  	<button type="submit" ng-click="EditPost()" class="button  button-small  btn-deposer">
+	  				Envoyer
+			  	</button>
+		 	</div><!-- fin div form-deposer -->
+		 	
+	 </div>
+  </ion-content>
+</ion-view>

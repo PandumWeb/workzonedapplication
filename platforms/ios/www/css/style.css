@@ -1,0 +1,397 @@
+/* Empty. Add your own CSS if you like */
+*, *before, *after{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+.bkg-login{
+	background: url('../img/fond-appli-2.png');
+	overflow: hidden; 
+}
+.bkg-pages{
+	background: url('../img/fond-appli.png');
+}
+
+/* MENU */
+
+
+.item.search{
+	background-color: #002856;
+	width: 100%;
+	margin: auto;
+}
+
+a.item-content{
+	color: #fff;
+}
+
+.ion-search{
+	color: #fff;
+}
+
+
+.item-complex .item-content, .item-radio .item-content{
+	background-color: #002856;
+}
+
+.menu-left{
+	background-color: #002856;
+}
+
+.bar.bar-stable .title {
+	color: #fff;
+}
+
+.bar-stable .button.button-clear {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+.bar.bar-bn{
+  border-color: #012c5d;
+  background-color: #002856;
+  background-image: linear-gradient(0deg, #012c5d, #012c5d 50%, transparent 50%);
+  color: #fff;
+}
+
+.button.button-bn{
+  border-color: #012c5d;
+  background-color: #002856;
+  background-image: linear-gradient(0deg, #012c5d, #012c5d 50%, transparent 50%);
+  color: #fff;
+}
+
+.col-bis{
+	
+	position: relative;
+	width: 100%;
+	height: 170px;
+	border: 2px solid #000;
+
+}
+
+/* SINGLE ANNONCE */
+
+
+#h1_annonce{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 26px;
+	font-style: italic;
+}
+
+#h2_annonce{
+	text-align: center;
+	margin-left: 150px;
+	font-size: 14px;
+	font-style: italic;
+}
+
+#p_annonce{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	font-style: italic;
+	margin-top: 40px;
+}
+
+.bloc-infos-single{
+	margin-top: 30px;
+}
+
+.box{
+	margin-top: 50px;
+	
+}
+
+#p_box{
+	font-style: italic;
+}
+
+.col-third{
+	margin-left: 15px;
+	font-style: italic;
+}
+
+hr{
+	border-color: #DDDDDD;
+	border-top: none;
+}
+
+/* DEPOSER UNE ANNONCE */
+
+.hr-deposer{
+	border-color: #DDDDDD;
+	border-top: none;
+	width: 90%;
+	
+}
+	
+.tel{
+	margin-bottom: 60px;
+}
+
+.form-deposer{
+margin-top: 30px;
+}
+
+.label-deposer{
+	margin-left: 5px;
+}
+	
+
+.h2-deposer{
+	margin-left: 18px;
+}
+
+.textarea-deposer{
+	width: 300px;
+	height: 100px;
+
+}
+
+.btn-deposer{
+	margin-top: 30px;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: #002856;
+	border: none;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.btn-deposer:hover{
+	color: #fff;
+}
+
+.list-deposer{
+	margin-top: 15px;
+}
+
+#logo{
+	margin: auto;
+}
+
+.label-select{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.has-error{
+	padding-left: 20px;
+	font-size: 12px;
+	color: #002856;
+}
+
+/* ACCUEIL */
+
+.bloc-texte{
+	width: 100%;
+	float: left;
+	padding: 0 20px;
+	margin-top: 10px;
+}
+
+
+
+.bloc-texte .p_accueil{
+	color: #000;
+	padding-top: 10px;
+}
+.bloc-annonce{
+	width: 100%;
+}
+
+.bloc-texte .h2_accueil{
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.item-accueil{
+	border-color: rgba(0, 40, 86, 0.5);
+	background-color: #fff;
+	color: #444;
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+
+.loca-accueil{
+	float: right;
+}
+
+
+.loca-accueil .p_loca{
+	font-size: 12px;
+	float: left;
+}
+
+.cat-accueil{
+	margin-top: 10px;
+}
+
+.cat-accueil .p_cat{
+	font-size: 12px;
+}
+.icon-accueil{
+	float: left;
+	font-size: 12px;
+}
+
+#name-user_id{
+	display: none;
+}
+
+/* CATEGORIES */
+
+.h2_categories{
+	text-align: center;
+}
+
+/* REGISTER */
+
+.bloc-form-register {
+	margin-top: 75px;
+}
+
+/* LOGIN */
+.bloc-form-login {
+	margin-top: 150px;
+}
+
+
+.ff{
+	background: transparent;
+	border: 3px solid #fff;
+	margin-bottom: 10px;
+	width: 60%;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	color: red;
+}
+.input-log-reg{
+	background: transparent;
+	color: #fff !important;
+}
+
+
+.input-log-reg::-webkit-input-placeholder { color:#fff; }
+.input-log-reg::-moz-placeholder { color:#fff; } /* firefox 19+ */
+.input-log-reg:-ms-input-placeholder { color:#fff; } /* ie */
+
+
+#h1_login{
+	text-transform: uppercase;
+	margin: auto;
+	border-bottom: 3px solid #002856;
+	width: 242px; 
+	color: #fff;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#btn-login{
+	background: transparent;
+	border: none;
+	color: #fff;
+	width: 30%;
+	font-size: 18px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding-top: 10px; 
+}
+
+#logo-appli-login{
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	bottom: -100px;
+	right: 10px;
+}
+
+.login-page{
+	position: relative;
+}
+
+.message-login {
+	color: #fff;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#btn-register{
+	color: #fff;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#span_login{
+	text-decoration: underline;
+}
+
+
+/* BOARD */
+
+.edit-board{
+	float: right;
+	margin-top: 20px;
+	padding-right: 10px;
+	font-size: 18px;
+
+}
+
+#h2_board{
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	float: left;
+}
+
+#btn-afficher-post{
+	float: right;
+	padding-right: 5px;
+	cursor: pointer;
+	text-decoration: underline;
+}
+#phrase-afficher-post{
+	float: left;
+}
+
+/* EDIT BOARD */
+
+
+
+.clearboth{
+	clear: both;
+}
+
+

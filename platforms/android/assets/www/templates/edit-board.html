@@ -1,0 +1,73 @@
+<ion-view view-title="Éditer" class="bkg-pages">
+  <ion-content>
+  	<div class="card">
+		  <div class="form-deposer">
+		  	<div id="message" ng-show="message">{{ message }}</div>
+			  	<h2 class="input-label h2-deposer">Nom</h2>
+				<hr class="hr-deposer">
+				<div class="name-infos-board">
+			  		<label class="item-input label-deposer board-infos">
+	    				<input type="text" placeholder="Name" name="name" ng-model="formData.name">
+	    	  		</label>
+	    	  		<div id="error-name" ng-class="{ 'has-error' : errorName }">
+	    	 			<span class="help-block" ng-show="errorName">{{ errorName }}</span>
+	   				</div>
+	   			</div><!-- fin div name-infos-board -->
+	   			<h2 class="input-label h2-deposer">Prénom</h2>
+				<hr class="hr-deposer">
+				<div class="name-infos-board">
+			  		<label class="item-input label-deposer board-infos">
+	    				<input type="text" placeholder="Name" name="name" ng-model="formData.firstname">
+	    	  		</label>
+	    	  		<div id="error-firstname" ng-class="{ 'has-error' : errorFirstName }">
+	    	 			<span class="help-block" ng-show="errorFirstName">{{ errorFirstName}}</span>
+	   				</div>
+	   			</div><!-- fin div name-infos-board -->
+	   			<h2 class="input-label clearboth h2-deposer">Pseudonyme</h2>
+				<hr class="hr-deposer">
+				<div class="name-infos-board">
+			  		<label class="item-input label-deposer board-infos">
+	    				<input type="text" placeholder="Username" name="username" ng-model="formData.username">
+	    	  		</label>
+	    	  		<div id="error-username" ng-class="{ 'has-error' : errorUsername }">
+	    	 			<span class="help-block" ng-show="errorUsername">{{ errorUsername }}</span>
+	   				</div>
+	   			</div><!-- fin div name-infos-board -->
+	   			<h2 class="input-label clearboth h2-deposer">Email</h2>
+				<hr class="hr-deposer">
+				<div class="name-infos-board">
+			  		<label class="item-input label-deposer board-infos">
+	    				<input type="text" placeholder="Email" name="email" ng-model="formData.email">
+	    	  		</label>
+	    	  		<div id="error-email" ng-class="{ 'has-error' : errorEmail }">
+	    	 			<span class="help-block" ng-show="errorEmail">{{ errorEmail }}</span>
+	   				</div>
+	   			</div><!-- fin div name-infos-board -->
+	   			<h2 class="input-label clearboth h2-deposer">Numéro de téléphone</h2>
+				<hr class="hr-deposer">
+				<div class="name-infos-board">
+			  		<label class="item-input label-deposer board-infos">
+	    				<input type="text" placeholder="Numéro de téléphone" name="number_phone" ng-model="formData.number_phone">
+	    	  		</label>
+	    	  		<div id="error-number_phone" ng-class="{ 'has-error' : errorNumberPhone }">
+	    	 			<span class="help-block" ng-show="errorNumberPhone">{{ errorNumberPhone }}</span>
+	   				</div>
+	   			</div><!-- fin div name-infos-board -->
+	   			<h2 class="input-label clearboth h2-deposer">Mot de passe</h2>
+				<hr class="hr-deposer">
+	   			<div class="name-infos-board">
+			  		<label class="item-input label-deposer board-infos">
+	    				<input  type="password" placeholder="Password" name="password" ng-model="formData.password">
+	    	  		</label>
+	    	  		<div id="error-password" ng-class="{ 'has-error' : errorPassword }">
+	    	 			<span class="help-block" ng-show="errorPassword">{{ errorPassword }}</span>
+	   				</div>
+	   			</div><!-- fin div name-infos-board -->
+	   			<button type="submit" ng-click="EditBoardPost()" class="button  button-small  btn-deposer">
+	  					Envoyer
+			  	</button>
+		 	</div><!-- fin div form-deposer -->
+		 	
+	 </div>
+  </ion-content>
+</ion-view>

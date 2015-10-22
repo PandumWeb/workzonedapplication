@@ -1,0 +1,55 @@
+<ion-view view-title="Tableau de bord" class="bkg-pages">
+  <ion-content>
+  	<div class="card">
+      <h2 id="h2_board">Informations :</h2>
+      <a class="tab-item edit edit-board" href="#/app/edit-board/{{user_id}}">
+        <i class="ion-edit"></i>
+          Modifier
+      </a>
+  		<div class="item clearboth">
+  			<span>Nom : </span>
+   			{{name}}
+   		</div>
+      <div class="item clearboth">
+        <span>Prénom : </span>
+        {{firstname}}
+      </div>
+      <div class="item">
+        <span>Pseudonyme : </span>
+        {{username}}
+      </div>
+   		<div class="item">
+   			<span>Email : </span>
+   			{{email}}
+  		</div>
+      <div class="item">
+        <span>Numéro de téléphone : </span>
+        {{number_phone}}
+      </div>
+      <div class="item ligne-articles">
+          <div id="phrase-afficher-post">Vos articles :</div>
+          <div id="btn-afficher-post">Afficher les articles</div>
+      </a>
+      </div>
+      <div class="bloc-articles-board">
+        <div  ng-repeat="user in userById">
+          <div class="card">
+            <a href="#/app/single-annonce/{{user.id}}" class="item">
+                <div class="bloc-texte">
+                  <h2 class="h2_accueil">{{ user.title }}</h2>
+                  <p class="p_accueil">{{ user.content }}</p>
+                  <div class="loca-accueil">
+                    <i class="icon icon-deposer ion-location placeholder-icon icon-accueil"></i>
+                    <p class="p_loca"> {{ user.localisation}} </p>
+                  </div>
+                  <div class="cat-accueil">
+                    <p class="p_cat"> {{ user.categories_name}} </p>
+                  </div>
+                </div><!-- fin div bloc-texte -->
+            </a>
+          </div><!-- fin div card -->   
+        </div> <!-- fin div ng-repeat --> 
+      </div>
+  	</div><!-- fin div card -->
+  </ion-content>
+</ion-view>
